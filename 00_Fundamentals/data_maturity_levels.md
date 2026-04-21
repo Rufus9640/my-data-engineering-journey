@@ -4,7 +4,7 @@
 
 ## 📌 What is Data Maturity?
 
-![Data Maturity](./00_Fundamentals/images/lecture_02/image_001.png)
+![Data Maturity](./images/concepts/data_maturity.png)
 
 Data maturity defines **how advanced a company is in using data**.
 
