@@ -1,139 +1,148 @@
 # Data Engineering Undercurrents: Security, Privacy & Data Quality
 
+---
+
 ## 1. Security
+
+![Security and Privacy](images/security-privacy.png)
 
 Security in data engineering focuses on protecting systems and data from unauthorized access.
 
 ### Key Concepts
 
-#### Authentication
-Verifies the identity of a user.
+**Authentication**  
+Confirms that the user is who they claim to be.  
+Example: Login using username/password or IAM credentials.
 
-> Example: Logging in with username/password or IAM credentials
+**Authorization (Access Control)**  
+Determines what actions a user is allowed to perform.  
+Example: Read-only access vs Admin access.
 
-#### Authorization (Access Control)
-Determines what actions a user is allowed to perform.
-
-> Example: Read-only access vs admin access
-
-#### Principle of Least Privilege
-Users should only have the minimum permissions required.
-
-> Example: A junior engineer should not have full admin access
+**Principle of Least Privilege**  
+Users should only have the minimum permissions required to perform their tasks.  
+Example: A junior engineer should not have full admin access.
 
 ---
 
 ### Important Note
-Security is not absolute.
 
-> It is about reducing risk through multiple layers of protection.
+Security is not about being 100% secure.
+
+> It is about reducing risk using multiple layers of protection.
 
 ---
 
 ## 2. Privacy
 
+![Security and Privacy](images/security-privacy.png)
+
 Privacy focuses on protecting sensitive user data.
 
-### Why it matters
-- Increasing digital data generation
-- Frequent data breaches
-- Regulatory requirements (GDPR, etc.)
+### Why Privacy Matters
+- Increasing digital data generation  
+- Frequent data breaches  
+- Legal and regulatory requirements  
 
-### Key Concept
+---
 
-#### Personally Identifiable Information (PII)
-Data that can identify an individual.
+### Personally Identifiable Information (PII)
+
+PII is any data that can identify an individual.
 
 Examples:
-- Name
-- Email
-- Phone number
+- Name  
+- Email  
+- Phone number  
 
 ---
 
 ### Best Practices
-- Minimize collection of sensitive data
-- Protect stored data
-- Control access strictly
+- Minimize collection of sensitive data  
+- Protect stored data  
+- Restrict access to authorized users  
 
 ---
 
-## 3. Data Quality
+## 3. Data Quality Overview
+
+![Data Quality](images/data-quality-overview.png)
 
 Data quality is one of the most critical aspects of data engineering.
 
 > It is all about **trust**.
 
-If users lose trust in data:
-- They stop using dashboards
-- They rely on raw data instead
+If trust is lost:
+- Users stop using dashboards  
+- They rely on raw data instead  
 
 ---
 
-## Key Insight
+### Key Insight
 
 > Data fails silently.
 
 Unlike software systems:
-- Applications crash visibly
-- Data pipelines may fail without obvious signs
+- Software crashes visibly  
+- Data pipelines may fail without clear signals  
 
 ---
 
-## Why Data Quality is Hard
+## 4. Data Quality Challenges
 
-- Issues may not be obvious
-- Problems can occur without code changes
-- Requires continuous monitoring
+![Data Testing](images/data-quality-testing.png)
 
----
+Data quality problems are harder to detect compared to software bugs.
 
-## Data Quality vs Software Quality
+### Why Data Quality is Difficult
 
-### Software
-- Issues occur during deployment
-- Bugs are easier to detect
-
-### Data
-- Issues can occur anytime
-- Often involves subtle statistical changes
+- Issues are often subtle  
+- Problems can occur without code changes  
+- Requires continuous monitoring  
 
 ---
 
-## Example Scenarios
+### Data vs Software Problems
 
-### Case 1: Sudden spike in sales
-Possible reasons:
-- Real business growth
-- Pipeline bug
+**Software Engineering**
+- Issues happen during deployment  
+- Bugs are easier to detect  
 
-### Case 2: Zero sales
-Possible reasons:
-- No customer activity
-- Pipeline failure
+**Data Engineering**
+- Issues can happen anytime  
+- Often involves statistical anomalies  
 
 ---
 
-## Key Techniques
+### Real-World Scenarios
 
-### 1. Validation
-- Check data correctness
-- Example: Null checks, constraints
+**Case 1: Sudden spike in sales**
+- Could be real business growth  
+- Could be a pipeline bug  
 
-### 2. Testing
-- Ensure pipeline logic works
-- Example: Unit tests for transformations
+**Case 2: Zero sales**
+- Could be no user activity  
+- Could be pipeline failure  
 
-### 3. Observability
-- Monitor pipeline health
-- Detect anomalies
+---
+
+## 5. Ensuring Data Quality
+
+### Validation
+Check whether data is correct  
+Example: Null checks, constraints  
+
+### Testing
+Ensure transformation logic works correctly  
+
+### Observability
+Monitor pipelines to detect failures and anomalies  
 
 ---
 
 ## Final Takeaways
 
-- Security protects access
-- Privacy protects sensitive data
-- Data quality ensures trust
+- Security → Protects access  
+- Privacy → Protects sensitive data  
+- Data Quality → Ensures trust  
 
-> Without trust, data engineering fails.
+> Without trust, data engineering systems lose their value.
